@@ -1,5 +1,7 @@
-<dialog *ngIf="modalService.showModal" open>
-    <h2>RULES:</h2>
-    <button (click)="modalService.showModal = false">X</button>
-    <img src="#" alt="Image of the rules">
+<dialog class="dialog" *ngIf="modalService.showModal" open>
+    <div class="dialog__header">    
+        <h2>RULES:</h2>
+        <button (click)="modalService.showModal = false">X</button>
+    </div>
+    <object data="assets/images/image-rules.svg" type="image/svg+xml"></object>
 </dialog>
