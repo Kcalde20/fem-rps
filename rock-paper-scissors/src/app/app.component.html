@@ -6,4 +6,5 @@
   </div>
 </section>
 <router-outlet></router-outlet>
-<button>RULES</button>
+<app-rules-view></app-rules-view>
+<button (click)="modalService.showModal = true">RULES</button>
