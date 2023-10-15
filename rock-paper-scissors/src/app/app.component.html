@@ -2,9 +2,13 @@
   <h1>Rock Paper Scissors</h1>
   <div class="card">
     <label>SCORE</label>
-    <p>12</p>
+    <p>{{scoreService.score$ | async}}</p>
   </div>
 </section>
 <router-outlet></router-outlet>
 <app-rules-view></app-rules-view>
 <button (click)="modalService.showModal = true">RULES</button>
+
+<p>score: {{scoreService.score$ | async}}</p>
+<p>player Choice: {{gameService.playerChoice$ | async}}</p>
+<p>computer Choice: {{gameService.computerChoice$ | async}}</p>

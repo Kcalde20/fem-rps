@@ -5,7 +5,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { GameViewComponent } from './views/game-view/game-view.component';
 import { RulesViewComponent } from './views/rules-view/rules-view.component';
-import { ModalService } from './services/modal.service';
 
 @NgModule({
   declarations: [
