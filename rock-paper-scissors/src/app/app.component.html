@@ -7,7 +7,7 @@
 </section>
 <router-outlet></router-outlet>
 <app-rules-view></app-rules-view>
-<button (click)="modalService.showModal = true">RULES</button>
+<button (click)="modalService.showModal = true" class="button" data-type="clear">RULES</button>
 
 <p>score: {{scoreService.score$ | async}}</p>
 <p>player Choice: {{gameService.playerChoice$ | async}}</p>

@@ -41,27 +41,33 @@ export class GameService {
     this.compareChoices(this.playerChoice.value, this.computerChoice.value);
   }
 
-  compareChoices(p:string | null, c: string | null){
+  compareChoices(p: string | null, c: string | null){
     if (p == c){
       console.log('Tie');
     } else if (p == "Rock" && c == "Scissors"){
       console.log('Player Wins');
       this.scoreService.increaseScore();
+
     } else if (p == "Rock" && c == "Paper"){
       console.log('Computer Wins');
       this.scoreService.decreaseScore();
+
     } else if (p == "Scissors" && c == "Paper"){
       console.log('Player Wins');
       this.scoreService.increaseScore();
+
     } else if (p == "Scissors" && c == "Rock"){
       console.log('Computer Wins');
       this.scoreService.decreaseScore();
+
     } else if (p == "Paper" && c == "Rock"){
       console.log('Player Wins');
       this.scoreService.increaseScore();
+
     } else if (p == "Paper" && c == "Scissors"){
       console.log('Computer Wins');
       this.scoreService.decreaseScore();
+
     } else {
       console.log('compareChoices method Failed');
     }
